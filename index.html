@@ -1,0 +1,2553 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>УралПромГрупп — Корпусная, офисная мебель и кухни на заказ в Екатеринбурге</title>
+  <meta name="description" content="Производство и проектирование мебели на заказ в Екатеринбурге: кухни, офисная и корпусная мебель по индивидуальным размерам. Телефон: +7 (912) 276-02-92.">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="УралПромГрупп — Мебель на заказ в Екатеринбурге">
+  <meta property="og:description" content="Изготовление корпусной, офисной мебели и кухонных гарнитуров по индивидуальным размерам.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+
+  <!-- Favicon inline SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23D97706'/%3E%3Cpath d='M8 22V10h4v8h6v-8h4v12H8z' fill='%23FFFFFF'/%3E%3Crect x='8' y='20' width='16' height='2' fill='%23F8FAFC'/%3E%3C/svg%3E">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=Unbounded:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* -------------------------------------------------------------
+       CSS RESET & TYPOGRAPHY FIXES
+    ------------------------------------------------------------- */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      max-width: 100%;
+    }
+
+    html, body {
+      overflow-x: hidden !important;
+      width: 100%;
+      max-width: 100vw;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Light Theme (Default) */
+    :root, html[data-theme="light"] {
+      --bg-dark: #F8FAFC;
+      --bg-card: #FFFFFF;
+      --bg-card-hover: #F1F5F9;
+      --bg-surface: #EDF2F7;
+      --accent: #D97706;
+      --accent-hover: #B45309;
+      --accent-glow: rgba(217, 119, 6, 0.25);
+      --accent-light: rgba(217, 119, 6, 0.08);
+      --text-main: #0F172A;
+      --text-muted: #475569;
+      --text-dim: #64748B;
+      --border: #E2E8F0;
+      --border-accent: rgba(217, 119, 6, 0.4);
+      --header-bg: rgba(248, 250, 252, 0.94);
+      --blueprint-bg: #F1F5F9;
+      --blueprint-line: #CBD5E1;
+      --shadow-color: rgba(15, 23, 42, 0.08);
+      
+      --font-title: 'Unbounded', system-ui, -apple-system, sans-serif;
+      --font-body: 'Golos Text', system-ui, -apple-system, sans-serif;
+      
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 20px;
+      
+      --container-width: 1200px;
+      --transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    /* Dark Theme */
+    html[data-theme="dark"] {
+      --bg-dark: #0A0E17;
+      --bg-card: #121824;
+      --bg-card-hover: #192233;
+      --bg-surface: #161F2E;
+      --accent: #E59849;
+      --accent-hover: #F0A85D;
+      --accent-glow: rgba(229, 152, 73, 0.22);
+      --accent-light: rgba(229, 152, 73, 0.1);
+      --text-main: #F8FAFC;
+      --text-muted: #94A3B8;
+      --text-dim: #64748B;
+      --border: rgba(255, 255, 255, 0.08);
+      --border-accent: rgba(229, 152, 73, 0.35);
+      --header-bg: rgba(10, 14, 23, 0.94);
+      --blueprint-bg: #0A0E17;
+      --blueprint-line: #192334;
+      --shadow-color: rgba(0, 0, 0, 0.4);
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: var(--font-body);
+      -webkit-font-smoothing: antialiased;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    body {
+      line-height: 1.6;
+      padding-bottom: 72px;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+
+    @media (min-width: 768px) {
+      body {
+        padding-bottom: 0;
+      }
+    }
+
+    /* -------------------------------------------------------------
+       TYPOGRAPHY & NO-WRAP FIXES
+    ------------------------------------------------------------- */
+    h1, h2, h3, h4 {
+      font-family: var(--font-title);
+      font-weight: 600;
+      line-height: 1.28;
+      color: var(--text-main);
+      letter-spacing: -0.02em;
+    }
+
+    p {
+      color: var(--text-muted);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--container-width);
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    @media (min-width: 480px) {
+      .container {
+        padding: 0 20px;
+      }
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      background: var(--accent-light);
+      border: 1px solid var(--border-accent);
+      border-radius: 100px;
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--accent);
+      margin-bottom: 16px;
+      white-space: normal;
+    }
+
+    .badge-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: var(--accent);
+      box-shadow: 0 0 8px var(--accent);
+      flex-shrink: 0;
+    }
+
+    .section-title {
+      font-size: 1.45rem;
+      margin-bottom: 10px;
+    }
+
+    .section-subtitle {
+      font-size: 0.95rem;
+      max-width: 640px;
+      margin-bottom: 32px;
+    }
+
+    @media (min-width: 768px) {
+      .section-title {
+        font-size: 2.2rem;
+        margin-bottom: 12px;
+      }
+      .section-subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 40px;
+      }
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 20px;
+      border-radius: var(--radius-md);
+      font-family: var(--font-body);
+      font-weight: 600;
+      font-size: 0.92rem;
+      cursor: pointer;
+      border: none;
+      transition: var(--transition);
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent) 0%, #B45309 100%);
+      color: #FFFFFF;
+      box-shadow: 0 6px 20px var(--accent-glow);
+    }
+
+    html[data-theme="dark"] .btn-primary {
+      color: #0A0E17;
+      background: linear-gradient(135deg, var(--accent) 0%, #D48433 100%);
+    }
+
+    .btn-primary:hover {
+      background: linear-gradient(135deg, var(--accent-hover) 0%, #E59849 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px rgba(217, 119, 6, 0.35);
+    }
+
+    .btn-secondary {
+      background: var(--bg-card);
+      color: var(--text-main);
+      border: 1px solid var(--border);
+    }
+
+    .btn-secondary:hover {
+      background: var(--bg-card-hover);
+      border-color: var(--border-accent);
+      transform: translateY(-2px);
+    }
+
+    .btn-icon {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+      flex-shrink: 0;
+    }
+
+    /* -------------------------------------------------------------
+       HEADER & MOBILE BURGER MENU
+    ------------------------------------------------------------- */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--header-bg);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+      gap: 12px;
+    }
+
+    @media (min-width: 768px) {
+      .header-inner {
+        height: 72px;
+        gap: 20px;
+      }
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--font-title);
+      font-weight: 700;
+      font-size: 0.98rem;
+      color: var(--text-main);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    @media (min-width: 768px) {
+      .logo {
+        gap: 12px;
+        font-size: 1.15rem;
+      }
+    }
+
+    .logo-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: var(--radius-sm);
+      background: var(--bg-surface);
+      border: 1px solid var(--border-accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    @media (min-width: 768px) {
+      .logo-icon {
+        width: 36px;
+        height: 36px;
+      }
+    }
+
+    .nav-list {
+      display: none;
+      align-items: center;
+      gap: 20px;
+    }
+
+    @media (min-width: 1050px) {
+      .nav-list {
+        gap: 24px;
+      }
+    }
+
+    .nav-link {
+      font-size: 0.92rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      white-space: nowrap;
+    }
+
+    .nav-link:hover {
+      color: var(--accent);
+    }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+
+    @media (min-width: 768px) {
+      .header-right {
+        gap: 14px;
+      }
+    }
+
+    .header-phone {
+      font-weight: 600;
+      font-size: 0.92rem;
+      color: var(--text-main);
+      white-space: nowrap;
+      display: none;
+    }
+
+    .header-phone:hover {
+      color: var(--accent);
+    }
+
+    .location-badge {
+      display: none;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.8rem;
+      color: var(--text-dim);
+      background: var(--bg-surface);
+      padding: 6px 12px;
+      border-radius: 100px;
+      border: 1px solid var(--border);
+      white-space: nowrap;
+    }
+
+    @media (min-width: 640px) {
+      .location-badge {
+        display: flex;
+      }
+    }
+
+    /* Theme Toggle Button */
+    .theme-toggle-btn {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      color: var(--text-main);
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: var(--transition);
+      flex-shrink: 0;
+    }
+
+    @media (min-width: 768px) {
+      .theme-toggle-btn {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    .theme-toggle-btn:hover {
+      border-color: var(--border-accent);
+      color: var(--accent);
+      transform: rotate(15deg);
+    }
+
+    .theme-icon-sun, .theme-icon-moon {
+      width: 18px;
+      height: 18px;
+    }
+
+    html[data-theme="light"] .theme-icon-sun { display: none; }
+    html[data-theme="light"] .theme-icon-moon { display: block; }
+    html[data-theme="dark"] .theme-icon-sun { display: block; }
+    html[data-theme="dark"] .theme-icon-moon { display: none; }
+
+    .header-cta-btn {
+      padding: 6px 12px;
+      font-size: 0.82rem;
+      display: none;
+    }
+
+    @media (min-width: 480px) {
+      .header-cta-btn {
+        display: inline-flex;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .header-cta-btn {
+        padding: 8px 16px;
+        font-size: 0.88rem;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .nav-list {
+        display: flex;
+      }
+      .header-phone {
+        display: block;
+      }
+    }
+
+    /* Mobile Hamburger Menu Toggle Button */
+    .mobile-menu-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      color: var(--text-main);
+      cursor: pointer;
+      transition: var(--transition);
+      flex-shrink: 0;
+    }
+
+    @media (min-width: 992px) {
+      .mobile-menu-toggle {
+        display: none;
+      }
+    }
+
+    /* Mobile Navigation Drawer Overlay */
+    .mobile-nav-drawer {
+      position: fixed;
+      inset: 0;
+      z-index: 1001;
+      background: var(--bg-card);
+      display: flex;
+      flex-direction: column;
+      padding: 20px 24px;
+      transform: translateX(100%);
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      overflow-y: auto;
+    }
+
+    .mobile-nav-drawer.active {
+      transform: translateX(0);
+    }
+
+    .mobile-drawer-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 24px;
+    }
+
+    .mobile-drawer-close {
+      background: none;
+      border: none;
+      color: var(--text-dim);
+      cursor: pointer;
+      padding: 6px;
+    }
+
+    .mobile-drawer-close:hover {
+      color: var(--text-main);
+    }
+
+    .mobile-drawer-nav {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 32px;
+    }
+
+    .mobile-drawer-link {
+      font-family: var(--font-title);
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: var(--text-main);
+      display: block;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
+      transition: var(--transition);
+    }
+
+    .mobile-drawer-link:hover {
+      color: var(--accent);
+      padding-left: 8px;
+    }
+
+    .mobile-drawer-actions {
+      margin-top: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    /* -------------------------------------------------------------
+       HERO SECTION
+    ------------------------------------------------------------- */
+    .hero {
+      padding: 36px 0 60px;
+      position: relative;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 32px;
+      align-items: center;
+    }
+
+    @media (min-width: 992px) {
+      .hero {
+        padding: 90px 0 100px;
+      }
+      .hero-grid {
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 40px;
+      }
+    }
+
+    .hero-title {
+      font-size: 1.75rem;
+      margin-bottom: 16px;
+      line-height: 1.22;
+    }
+
+    @media (min-width: 768px) {
+      .hero-title {
+        font-size: 2.8rem;
+        margin-bottom: 20px;
+      }
+    }
+
+    .hero-description {
+      font-size: 0.98rem;
+      margin-bottom: 24px;
+      max-width: 560px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 28px;
+    }
+
+    @media (min-width: 480px) {
+      .hero-actions {
+        flex-direction: row;
+      }
+    }
+
+    .hero-features {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+    }
+
+    @media (min-width: 480px) {
+      .hero-features {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      }
+    }
+
+    .hero-feature-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .hero-feature-icon {
+      width: 18px;
+      height: 18px;
+      color: var(--accent);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .hero-feature-text {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    /* Hero Visual Card */
+    .hero-visual {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 16px;
+      position: relative;
+      box-shadow: 0 16px 36px var(--shadow-color);
+      background-image: radial-gradient(circle at 90% 10%, var(--accent-light) 0%, transparent 60%);
+      width: 100%;
+    }
+
+    @media (min-width: 768px) {
+      .hero-visual {
+        padding: 24px;
+      }
+    }
+
+    .visual-header {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    @media (min-width: 400px) {
+      .visual-header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+
+    .visual-title {
+      font-size: 0.84rem;
+      font-family: var(--font-title);
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      white-space: nowrap;
+    }
+
+    .tab-group {
+      display: flex;
+      gap: 4px;
+      max-width: 100%;
+    }
+
+    .tab-btn {
+      background: none;
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
+      font-size: 0.76rem;
+      cursor: pointer;
+      transition: var(--transition);
+      white-space: nowrap;
+    }
+
+    .tab-btn.active {
+      background: var(--accent-light);
+      border-color: var(--border-accent);
+      color: var(--accent);
+    }
+
+    .blueprint-svg {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: var(--radius-sm);
+    }
+
+    /* -------------------------------------------------------------
+       PAINS & CHALLENGES SECTION
+    ------------------------------------------------------------- */
+    .section-pains {
+      padding: 60px 0;
+      background: var(--bg-surface);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .pains-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    @media (min-width: 600px) {
+      .pains-grid {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 20px;
+      }
+    }
+
+    .pain-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 20px;
+      transition: var(--transition);
+      box-shadow: 0 4px 12px var(--shadow-color);
+    }
+
+    @media (min-width: 768px) {
+      .pain-card {
+        padding: 28px;
+      }
+    }
+
+    .pain-card:hover {
+      border-color: var(--border-accent);
+      transform: translateY(-4px);
+    }
+
+    .pain-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: var(--radius-sm);
+      background: var(--accent-light);
+      border: 1px solid var(--border-accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+
+    .pain-title {
+      font-size: 1.05rem;
+      margin-bottom: 8px;
+    }
+
+    .pain-desc {
+      font-size: 0.88rem;
+      line-height: 1.5;
+    }
+
+    /* -------------------------------------------------------------
+       SERVICES SECTION
+    ------------------------------------------------------------- */
+    .section-services {
+      padding: 60px 0;
+    }
+
+    @media (min-width: 768px) {
+      .section-services {
+        padding: 90px 0;
+      }
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    @media (min-width: 768px) {
+      .services-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 28px;
+      }
+    }
+
+    .service-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 24px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 4px 16px var(--shadow-color);
+    }
+
+    @media (min-width: 768px) {
+      .service-card {
+        padding: 32px;
+      }
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--accent), transparent);
+      opacity: 0;
+      transition: var(--transition);
+    }
+
+    .service-card:hover {
+      border-color: var(--border-accent);
+      transform: translateY(-4px);
+      box-shadow: 0 16px 36px var(--shadow-color);
+    }
+
+    .service-card:hover::before {
+      opacity: 1;
+    }
+
+    .service-illustration {
+      width: 100%;
+      height: 120px;
+      margin-bottom: 20px;
+      background: var(--bg-surface);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px;
+    }
+
+    .service-title {
+      font-size: 1.15rem;
+      margin-bottom: 10px;
+    }
+
+    .service-desc {
+      font-size: 0.88rem;
+      margin-bottom: 16px;
+    }
+
+    .service-features {
+      margin-bottom: 20px;
+    }
+
+    .service-feature-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    .service-feature-item svg {
+      width: 14px;
+      height: 14px;
+      color: var(--accent);
+      flex-shrink: 0;
+    }
+
+    /* -------------------------------------------------------------
+       ADVANTAGES
+    ------------------------------------------------------------- */
+    .section-advantages {
+      padding: 60px 0;
+      background: var(--bg-surface);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    @media (min-width: 768px) {
+      .section-advantages {
+        padding: 90px 0;
+      }
+    }
+
+    .advantages-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    @media (min-width: 480px) {
+      .advantages-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+      }
+    }
+
+    .advantage-item {
+      padding: 20px;
+      background: var(--bg-card);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+      box-shadow: 0 4px 12px var(--shadow-color);
+    }
+
+    .advantage-num {
+      font-family: var(--font-title);
+      font-size: 1.3rem;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+
+    .advantage-title {
+      font-size: 1rem;
+      margin-bottom: 6px;
+    }
+
+    .advantage-desc {
+      font-size: 0.86rem;
+      line-height: 1.5;
+    }
+
+    /* -------------------------------------------------------------
+       INTERACTIVE ESTIMATOR
+    ------------------------------------------------------------- */
+    .section-estimator {
+      padding: 60px 0;
+    }
+
+    @media (min-width: 768px) {
+      .section-estimator {
+        padding: 90px 0;
+      }
+    }
+
+    .estimator-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-accent);
+      border-radius: var(--radius-lg);
+      padding: 24px 16px;
+      box-shadow: 0 16px 40px var(--shadow-color);
+      background-image: radial-gradient(circle at 10% 10%, var(--accent-light) 0%, transparent 50%);
+    }
+
+    @media (min-width: 768px) {
+      .estimator-box {
+        padding: 44px;
+      }
+    }
+
+    .step-title {
+      font-size: 0.88rem;
+      font-family: var(--font-title);
+      color: var(--text-main);
+      margin-bottom: 12px;
+    }
+
+    .options-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(105px, 1fr));
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .option-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 10px 8px;
+      text-align: center;
+      cursor: pointer;
+      transition: var(--transition);
+      user-select: none;
+    }
+
+    .option-card.selected {
+      background: var(--accent-light);
+      border-color: var(--accent);
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .option-label {
+      font-size: 0.82rem;
+    }
+
+    .input-notes {
+      width: 100%;
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 12px;
+      color: var(--text-main);
+      font-family: var(--font-body);
+      font-size: 0.88rem;
+      resize: vertical;
+      min-height: 70px;
+      margin-bottom: 20px;
+    }
+
+    .input-notes:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+
+    /* -------------------------------------------------------------
+       ABOUT COMPANY
+    ------------------------------------------------------------- */
+    .section-about {
+      padding: 60px 0;
+      background: var(--bg-surface);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .about-content {
+      max-width: 840px;
+      margin: 0 auto;
+    }
+
+    .about-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 24px 18px;
+      box-shadow: 0 6px 20px var(--shadow-color);
+    }
+
+    @media (min-width: 768px) {
+      .about-card {
+        padding: 44px;
+      }
+    }
+
+    .about-text {
+      font-size: 0.94rem;
+      line-height: 1.65;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+
+    .about-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .about-tag {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      padding: 5px 12px;
+      border-radius: 100px;
+      font-size: 0.8rem;
+      color: var(--text-dim);
+    }
+
+    /* -------------------------------------------------------------
+       FAQ ACCORDION
+    ------------------------------------------------------------- */
+    .section-faq {
+      padding: 60px 0;
+    }
+
+    @media (min-width: 768px) {
+      .section-faq {
+        padding: 90px 0;
+      }
+    }
+
+    .faq-list {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .faq-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: var(--transition);
+      box-shadow: 0 2px 8px var(--shadow-color);
+    }
+
+    .faq-header {
+      padding: 16px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      font-family: var(--font-title);
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-main);
+      gap: 12px;
+    }
+
+    @media (min-width: 768px) {
+      .faq-header {
+        padding: 20px 24px;
+        font-size: 0.98rem;
+      }
+    }
+
+    .faq-icon {
+      width: 18px;
+      height: 18px;
+      color: var(--accent);
+      transition: transform 0.3s ease;
+      flex-shrink: 0;
+    }
+
+    .faq-item.active .faq-icon {
+      transform: rotate(180deg);
+    }
+
+    .faq-body {
+      padding: 0 18px 16px 18px;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      display: none;
+      line-height: 1.55;
+    }
+
+    @media (min-width: 768px) {
+      .faq-body {
+        padding: 0 24px 20px 24px;
+        font-size: 0.92rem;
+      }
+    }
+
+    .faq-item.active .faq-body {
+      display: block;
+    }
+
+    /* -------------------------------------------------------------
+       CONTACTS & FOOTER
+    ------------------------------------------------------------- */
+    .section-contacts {
+      padding: 60px 0 40px;
+      background: var(--bg-surface);
+      border-top: 1px solid var(--border);
+    }
+
+    .contacts-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+
+    @media (min-width: 768px) {
+      .contacts-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .contact-card-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 24px 18px;
+      box-shadow: 0 6px 20px var(--shadow-color);
+    }
+
+    @media (min-width: 768px) {
+      .contact-card-box {
+        padding: 36px;
+      }
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+
+    .contact-item-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: var(--radius-sm);
+      background: var(--accent-light);
+      border: 1px solid var(--border-accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent);
+      flex-shrink: 0;
+    }
+
+    .contact-label {
+      font-size: 0.78rem;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 2px;
+    }
+
+    .contact-value {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--text-main);
+      word-break: break-all;
+    }
+
+    .contact-value:hover {
+      color: var(--accent);
+    }
+
+    .messengers-flex {
+      display: flex;
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    .msg-btn {
+      flex: 1;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 10px 12px;
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      font-weight: 600;
+      border: 1px solid var(--border);
+      background: var(--bg-surface);
+    }
+
+    .msg-btn-wa {
+      color: #25D366;
+      border-color: rgba(37, 211, 102, 0.3);
+    }
+
+    .msg-btn-tg {
+      color: #0088CC;
+      border-color: rgba(0, 136, 204, 0.3);
+    }
+
+    .footer {
+      padding: 24px 0;
+      border-top: 1px solid var(--border);
+      font-size: 0.8rem;
+      color: var(--text-dim);
+      background: var(--bg-dark);
+    }
+
+    .footer-flex {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: center;
+      text-align: center;
+    }
+
+    @media (min-width: 768px) {
+      .footer-flex {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+      }
+    }
+
+    /* -------------------------------------------------------------
+       MOBILE FIXED BOTTOM CONTACT BAR
+    ------------------------------------------------------------- */
+    .mobile-contact-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 995;
+      background: var(--header-bg);
+      backdrop-filter: blur(12px);
+      border-top: 1px solid var(--border);
+      padding: 8px 12px;
+      display: flex;
+      gap: 8px;
+    }
+
+    @media (min-width: 768px) {
+      .mobile-contact-bar {
+        display: none;
+      }
+    }
+
+    .mobile-bar-btn {
+      flex: 1;
+      padding: 10px 8px;
+      border-radius: var(--radius-sm);
+      font-size: 0.82rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      white-space: nowrap;
+    }
+
+    /* -------------------------------------------------------------
+       MODAL DIALOG
+    ------------------------------------------------------------- */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 1000;
+      background: rgba(0, 0, 0, 0.65);
+      backdrop-filter: blur(8px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      opacity: 0;
+      pointer-events: none;
+      transition: var(--transition);
+    }
+
+    .modal-overlay.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .modal-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-accent);
+      border-radius: var(--radius-lg);
+      padding: 24px 18px;
+      width: 100%;
+      max-width: 420px;
+      position: relative;
+      transform: translateY(20px);
+      transition: var(--transition);
+      box-shadow: 0 20px 50px var(--shadow-color);
+    }
+
+    @media (min-width: 480px) {
+      .modal-box {
+        padding: 32px 24px;
+      }
+    }
+
+    .modal-overlay.active .modal-box {
+      transform: translateY(0);
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      background: none;
+      border: none;
+      color: var(--text-dim);
+      cursor: pointer;
+      padding: 4px;
+    }
+
+    .modal-close:hover {
+      color: var(--text-main);
+    }
+
+    .modal-title {
+      font-size: 1.1rem;
+      margin-bottom: 6px;
+    }
+
+    .modal-desc {
+      font-size: 0.84rem;
+      margin-bottom: 20px;
+    }
+
+    .modal-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    /* -------------------------------------------------------------
+       ONLINE CONSULTATION CHAT WIDGET
+    ------------------------------------------------------------- */
+    .chat-widget-trigger {
+      position: fixed;
+      bottom: 74px;
+      right: 16px;
+      z-index: 998;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent) 0%, #B45309 100%);
+      color: #FFFFFF;
+      border: none;
+      box-shadow: 0 8px 20px var(--accent-glow);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition);
+    }
+
+    html[data-theme="dark"] .chat-widget-trigger {
+      color: #0A0E17;
+      background: linear-gradient(135deg, var(--accent) 0%, #D48433 100%);
+    }
+
+    .chat-widget-trigger:hover {
+      transform: scale(1.08);
+    }
+
+    @media (min-width: 768px) {
+      .chat-widget-trigger {
+        bottom: 30px;
+        right: 30px;
+        width: 58px;
+        height: 58px;
+      }
+    }
+
+    .chat-badge-dot {
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      width: 12px;
+      height: 12px;
+      background: #22C55E;
+      border: 2px solid var(--bg-card);
+      border-radius: 50%;
+    }
+
+    .chat-window {
+      position: fixed;
+      bottom: 130px;
+      left: 12px;
+      right: 12px;
+      z-index: 999;
+      width: auto;
+      max-width: calc(100vw - 24px);
+      height: calc(100vh - 160px);
+      max-height: 440px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-accent);
+      border-radius: var(--radius-lg);
+      box-shadow: 0 16px 40px var(--shadow-color);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(20px) scale(0.95);
+      transition: var(--transition);
+    }
+
+    @media (min-width: 480px) {
+      .chat-window {
+        left: auto;
+        right: 16px;
+        width: 350px;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .chat-window {
+        bottom: 98px;
+        right: 30px;
+        width: 360px;
+        height: 480px;
+        max-height: calc(100vh - 140px);
+      }
+    }
+
+    .chat-window.active {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0) scale(1);
+    }
+
+    .chat-header {
+      background: var(--bg-surface);
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .chat-consultant-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .chat-avatar {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: var(--accent-light);
+      border: 1px solid var(--border-accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 0.85rem;
+      flex-shrink: 0;
+    }
+
+    .chat-name {
+      font-size: 0.88rem;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+
+    .chat-status {
+      font-size: 0.75rem;
+      color: #22C55E;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .chat-status::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      background: #22C55E;
+      border-radius: 50%;
+    }
+
+    .chat-close-btn {
+      background: none;
+      border: none;
+      color: var(--text-dim);
+      cursor: pointer;
+      padding: 4px;
+    }
+
+    .chat-close-btn:hover {
+      color: var(--text-main);
+    }
+
+    .chat-body {
+      flex: 1;
+      padding: 14px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      background: var(--bg-dark);
+    }
+
+    .chat-msg {
+      max-width: 88%;
+      padding: 10px 12px;
+      border-radius: var(--radius-md);
+      font-size: 0.85rem;
+      line-height: 1.45;
+      word-wrap: break-word;
+    }
+
+    .chat-msg-bot {
+      align-self: flex-start;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      color: var(--text-main);
+      border-bottom-left-radius: 4px;
+    }
+
+    .chat-msg-user {
+      align-self: flex-end;
+      background: var(--accent);
+      color: #FFFFFF;
+      border-bottom-right-radius: 4px;
+    }
+
+    html[data-theme="dark"] .chat-msg-user {
+      color: #0A0E17;
+    }
+
+    .chat-quick-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 4px;
+    }
+
+    .chat-quick-btn {
+      background: var(--bg-card);
+      border: 1px solid var(--border-accent);
+      color: var(--accent);
+      padding: 5px 10px;
+      border-radius: 100px;
+      font-size: 0.75rem;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .chat-quick-btn:hover {
+      background: var(--accent-light);
+    }
+
+    .chat-footer {
+      padding: 10px;
+      background: var(--bg-surface);
+      border-top: 1px solid var(--border);
+      display: flex;
+      gap: 6px;
+    }
+
+    .chat-input {
+      flex: 1;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 8px 12px;
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      color: var(--text-main);
+      width: 100%;
+    }
+
+    .chat-input:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+
+    .chat-send-btn {
+      background: var(--accent);
+      color: #FFFFFF;
+      border: none;
+      border-radius: var(--radius-sm);
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: var(--transition);
+      flex-shrink: 0;
+    }
+
+    html[data-theme="dark"] .chat-send-btn {
+      color: #0A0E17;
+    }
+
+    .chat-send-btn:hover {
+      background: var(--accent-hover);
+    }
+
+    /* -------------------------------------------------------------
+       ANIMATION UTILITIES (IntersectionObserver)
+    ------------------------------------------------------------- */
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">
+        <div class="logo-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent);">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+          </svg>
+        </div>
+        <span>УралПромГрупп</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#services" class="nav-link">Услуги</a></li>
+          <li><a href="#advantages" class="nav-link">Преимущества</a></li>
+          <li><a href="#estimator" class="nav-link">Расчёт</a></li>
+          <li><a href="#about" class="nav-link">О&nbsp;компании</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+          <li><a href="#contacts" class="nav-link">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-right">
+        <div class="location-badge">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          Екатеринбург
+        </div>
+        <a href="tel:+79122760292" class="header-phone">+7 (912) 276-02-92</a>
+
+        <!-- THEME TOGGLE BUTTON -->
+        <button class="theme-toggle-btn" id="theme-toggle" title="Переключить тему (Светлая / Тёмная)" aria-label="Переключить тему">
+          <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+
+        <button class="btn btn-primary open-modal-btn header-cta-btn">Связаться</button>
+
+        <!-- Mobile Hamburger Menu Button -->
+        <button class="mobile-menu-toggle" id="burger-btn" aria-label="Открыть мобильное меню">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-nav-drawer" id="mobile-drawer">
+    <div class="mobile-drawer-header">
+      <div class="logo">
+        <div class="logo-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" style="color: var(--accent);"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+        </div>
+        <span>УралПромГрупп</span>
+      </div>
+      <button class="mobile-drawer-close" id="drawer-close">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+
+    <ul class="mobile-drawer-nav">
+      <li><a href="#services" class="mobile-drawer-link" onclick="closeMobileDrawer()">Услуги</a></li>
+      <li><a href="#advantages" class="mobile-drawer-link" onclick="closeMobileDrawer()">Преимущества</a></li>
+      <li><a href="#estimator" class="mobile-drawer-link" onclick="closeMobileDrawer()">Расчёт проекта</a></li>
+      <li><a href="#about" class="mobile-drawer-link" onclick="closeMobileDrawer()">О&nbsp;компании</a></li>
+      <li><a href="#faq" class="mobile-drawer-link" onclick="closeMobileDrawer()">FAQ</a></li>
+      <li><a href="#contacts" class="mobile-drawer-link" onclick="closeMobileDrawer()">Контакты</a></li>
+    </ul>
+
+    <div class="mobile-drawer-actions">
+      <a href="tel:+79122760292" class="btn btn-secondary" style="width: 100%;">
+        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        Позвонить: +7 (912) 276-02-92
+      </a>
+      <a href="https://wa.me/79122760292" target="_blank" rel="noopener" class="btn btn-primary" style="width: 100%; background: #25D366; color: #fff;">
+        <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+        Написать в WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content reveal">
+        <div class="badge">
+          <span class="badge-dot"></span>
+          Производство и&nbsp;проектирование в&nbsp;Екатеринбурге
+        </div>
+        <h1 class="hero-title">Мебель на&nbsp;заказ для дома и&nbsp;бизнеса</h1>
+        <p class="hero-description">
+          Проектирование и&nbsp;изготовление корпусной мебели, кухонных гарнитуров и&nbsp;офисных систем под точные габариты вашего помещения.
+        </p>
+
+        <div class="hero-actions">
+          <a href="https://wa.me/79122760292" target="_blank" rel="noopener" class="btn btn-primary">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+            </svg>
+            Написать в&nbsp;WhatsApp
+          </a>
+          <a href="tel:+79122760292" class="btn btn-secondary">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            8 (912) 276-02-92
+          </a>
+        </div>
+
+        <div class="hero-features">
+          <div class="hero-feature-item">
+            <svg class="hero-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span class="hero-feature-text">Выездной замер по&nbsp;Екатеринбургу</span>
+          </div>
+          <div class="hero-feature-item">
+            <svg class="hero-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span class="hero-feature-text">Корпусная, офисная и&nbsp;кухонная мебель</span>
+          </div>
+          <div class="hero-feature-item">
+            <svg class="hero-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span class="hero-feature-text">Согласование по&nbsp;чертежам</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- VISUAL GRAPHIC SVG -->
+      <div class="hero-visual reveal">
+        <div class="visual-header">
+          <div class="visual-title">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20M12 2v20"></path></svg>
+            Схема проекта
+          </div>
+          <div class="tab-group">
+            <button class="tab-btn active" onclick="switchTab('kitchen', event)">Кухня</button>
+            <button class="tab-btn" onclick="switchTab('office', event)">Офис</button>
+            <button class="tab-btn" onclick="switchTab('cabinet', event)">Шкаф</button>
+          </div>
+        </div>
+
+        <!-- SVG TECHNICAL SCHEMATIC -->
+        <svg id="schematic-kitchen" class="blueprint-svg" viewBox="0 0 500 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="500" height="320" rx="12" fill="var(--blueprint-bg)"/>
+          <path d="M0 40H500M0 80H500M0 120H500M0 160H500M0 200H500M0 240H500M0 280H500" stroke="var(--blueprint-line)" stroke-dasharray="4 4"/>
+          <path d="M50 0V320M100 0V320M150 0V320M200 0V320M250 0V320M300 0V320M350 0V320M400 0V320M450 0V320" stroke="var(--blueprint-line)" stroke-dasharray="4 4"/>
+          
+          <!-- Upper Cabinets -->
+          <rect x="40" y="40" width="130" height="90" rx="4" fill="var(--bg-card)" stroke="var(--accent)" stroke-width="1.5"/>
+          <line x1="105" y1="40" x2="105" y2="130" stroke="var(--accent)" stroke-dasharray="2 2"/>
+          <circle cx="95" cy="85" r="3" fill="var(--accent)"/>
+          <circle cx="115" cy="85" r="3" fill="var(--accent)"/>
+
+          <rect x="180" y="40" width="130" height="90" rx="4" fill="var(--bg-card)" stroke="var(--accent)" stroke-width="1.5"/>
+          <line x1="245" y1="40" x2="245" y2="130" stroke="var(--accent)" stroke-dasharray="2 2"/>
+          <circle cx="235" cy="85" r="3" fill="var(--accent)"/>
+          <circle cx="255" cy="85" r="3" fill="var(--accent)"/>
+
+          <rect x="320" y="40" width="140" height="90" rx="4" fill="var(--bg-card)" stroke="var(--accent)" stroke-width="1.5"/>
+          <rect x="340" y="55" width="100" height="60" rx="2" fill="var(--bg-dark)" stroke="var(--text-dim)"/>
+          <path d="M350 85H430" stroke="var(--accent)" stroke-width="2"/>
+
+          <!-- Countertop -->
+          <rect x="30" y="165" width="440" height="15" rx="3" fill="var(--accent)" opacity="0.9"/>
+          
+          <!-- Lower Cabinets -->
+          <rect x="40" y="180" width="130" height="100" rx="4" fill="var(--bg-card)" stroke="var(--text-muted)" stroke-width="1.5"/>
+          <line x1="40" y1="230" x2="170" y2="230" stroke="var(--text-muted)" stroke-dasharray="2 2"/>
+          
+          <rect x="180" y="180" width="130" height="100" rx="4" fill="var(--bg-card)" stroke="var(--text-muted)" stroke-width="1.5"/>
+          <circle cx="245" cy="230" r="14" fill="var(--bg-dark)" stroke="var(--accent)"/>
+
+          <rect x="320" y="180" width="140" height="100" rx="4" fill="var(--bg-card)" stroke="var(--text-muted)" stroke-width="1.5"/>
+          <line x1="320" y1="213" x2="460" y2="213" stroke="var(--text-muted)"/>
+          <line x1="320" y1="246" x2="460" y2="246" stroke="var(--text-muted)"/>
+
+          <!-- Dimension Lines -->
+          <line x1="40" y1="25" x2="460" y2="25" stroke="var(--text-dim)" stroke-width="1"/>
+          <line x1="40" y1="20" x2="40" y2="30" stroke="var(--text-dim)"/>
+          <line x1="460" y1="20" x2="460" y2="30" stroke="var(--text-dim)"/>
+          <text x="250" y="20" fill="var(--text-dim)" font-size="11" font-family="sans-serif" text-anchor="middle">3000 мм (Под размер помещения)</text>
+        </svg>
+
+        <svg id="schematic-office" class="blueprint-svg" viewBox="0 0 500 320" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+          <rect width="500" height="320" rx="12" fill="var(--blueprint-bg)"/>
+          <path d="M0 40H500M0 80H500M0 120H500M0 160H500M0 200H500M0 240H500M0 280H500" stroke="var(--blueprint-line)" stroke-dasharray="4 4"/>
+          <!-- Workstation 1 -->
+          <rect x="50" y="60" width="180" height="100" rx="6" fill="var(--bg-card)" stroke="var(--accent)" stroke-width="1.5"/>
+          <rect x="70" y="80" width="80" height="15" rx="3" fill="var(--bg-dark)" stroke="var(--text-dim)"/>
+          <rect x="170" y="70" width="40" height="80" rx="3" fill="var(--bg-dark)" stroke="var(--text-dim)"/>
+          
+          <!-- Workstation 2 -->
+          <rect x="270" y="60" width="180" height="100" rx="6" fill="var(--bg-card)" stroke="var(--accent)" stroke-width="1.5"/>
+          <rect x="350" y="80" width="80" height="15" rx="3" fill="var(--bg-dark)" stroke="var(--text-dim)"/>
+          <rect x="290" y="70" width="40" height="80" rx="3" fill="var(--bg-dark)" stroke="var(--text-dim)"/>
+
+          <!-- Storage Unit -->
+          <rect x="50" y="190" width="400" height="80" rx="6" fill="var(--bg-card)" stroke="var(--text-muted)" stroke-width="1.5"/>
+          <line x1="150" y1="190" x2="150" y2="270" stroke="var(--text-muted)" stroke-dasharray="3 3"/>
+          <line x1="250" y1="190" x2="250" y2="270" stroke="var(--text-muted)" stroke-dasharray="3 3"/>
+          <line x1="350" y1="190" x2="350" y2="270" stroke="var(--text-muted)" stroke-dasharray="3 3"/>
+          
+          <text x="250" y="35" fill="var(--text-dim)" font-size="11" font-family="sans-serif" text-anchor="middle">Офисные станции и системы хранения</text>
+        </svg>
+
+        <svg id="schematic-cabinet" class="blueprint-svg" viewBox="0 0 500 320" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+          <rect width="500" height="320" rx="12" fill="var(--blueprint-bg)"/>
+          <path d="M0 40H500M0 80H500M0 120H500M0 160H500M0 200H500M0 240H500M0 280H500" stroke="var(--blueprint-line)" stroke-dasharray="4 4"/>
+          <!-- Wardrobe Frame -->
+          <rect x="80" y="40" width="340" height="240" rx="6" fill="var(--bg-card)" stroke="var(--accent)" stroke-width="1.5"/>
+          <!-- Sliding Door Separator -->
+          <line x1="193" y1="40" x2="193" y2="280" stroke="var(--accent)" stroke-dasharray="4 4"/>
+          <line x1="306" y1="40" x2="306" y2="280" stroke="var(--accent)" stroke-dasharray="4 4"/>
+          <!-- Shelves & Hangers Inside -->
+          <line x1="90" y1="90" x2="185" y2="90" stroke="var(--text-muted)"/>
+          <line x1="90" y1="140" x2="185" y2="140" stroke="var(--text-muted)"/>
+          <line x1="200" y1="80" x2="300" y2="80" stroke="var(--accent)" stroke-width="2"/>
+          <line x1="315" y1="120" x2="410" y2="120" stroke="var(--text-muted)"/>
+          <line x1="315" y1="180" x2="410" y2="180" stroke="var(--text-muted)"/>
+          
+          <text x="250" y="25" fill="var(--text-dim)" font-size="11" font-family="sans-serif" text-anchor="middle">Встроенный шкаф-купе / Гардеробная</text>
+        </svg>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CLIENT PAINS SECTION -->
+  <section class="section-pains">
+    <div class="container">
+      <div class="reveal">
+        <h2 class="section-title">С&nbsp;какими задачами к&nbsp;нам обращаются</h2>
+        <p class="section-subtitle">Решаем ключевые сложности, возникающие при заказе мебели по&nbsp;индивидуальным проектам</p>
+      </div>
+
+      <div class="pains-grid">
+        <div class="pain-card reveal">
+          <div class="pain-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+          </div>
+          <h3 class="pain-title">Сложная геометрия помещений</h3>
+          <p class="pain-desc">Выступы, ниши, нестандартная высота потолков или проходящие коммуникации, которые делают невозможной установку готовой фабричной мебели.</p>
+        </div>
+
+        <div class="pain-card reveal">
+          <div class="pain-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+          </div>
+          <h3 class="pain-title">Высокие нагрузки в&nbsp;офисах</h3>
+          <p class="pain-desc">Необходимость оснащения рабочих мест фурнитурой и&nbsp;плитами, рассчитанными на&nbsp;ежедневную интенсивную эксплуатацию без быстрых поломок.</p>
+        </div>
+
+        <div class="pain-card reveal">
+          <div class="pain-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+          </div>
+          <h3 class="pain-title">Подбор материалов под бюджет</h3>
+          <p class="pain-desc">Потребность скомпоновать качественные фасады, столешницы и&nbsp;механизмы без переплаты за&nbsp;лишние опции.</p>
+        </div>
+
+        <div class="pain-card reveal">
+          <div class="pain-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+          </div>
+          <h3 class="pain-title">Нужен единый исполнитель</h3>
+          <p class="pain-desc">Поиск надежного подрядчика в&nbsp;Екатеринбурге, способного взять на&nbsp;себя замер, проектирование, изготовление и&nbsp;монтаж на&nbsp;объекте.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section class="section-services" id="services">
+    <div class="container">
+      <div class="reveal">
+        <h2 class="section-title">Направления производства</h2>
+        <p class="section-subtitle">Изготавливаем мебель под индивидуальные размеры и&nbsp;особенности ваших задач</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1: Kitchen -->
+        <div class="service-card reveal">
+          <div>
+            <div class="service-illustration">
+              <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.6"><path d="M3 3h18v18H3z"></path><path d="M3 11h18M11 3v8M7 7h.01M15 7h.01"></path></svg>
+            </div>
+            <h3 class="service-title">Мебель для кухни</h3>
+            <p class="service-desc">Кухонные гарнитуры прямых, угловых и&nbsp;П-образных конфигураций с&nbsp;учетом встраиваемой бытовой техники.</p>
+            <div class="service-features">
+              <div class="service-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Влагостойкие столешницы и&nbsp;фасады
+              </div>
+              <div class="service-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Надежные подъемные и&nbsp;выдвижные механизмы
+              </div>
+              <div class="service-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Интеграция встроенной техники и&nbsp;моек
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-secondary open-modal-btn" style="width: 100%;">Обсудить проект кухни</button>
+        </div>
+
+        <!-- Service 2: Office -->
+        <div class="service-card reveal">
+          <div>
+            <div class="service-illustration">
+              <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.6"><rect x="2" y="7" width="20" height="14" rx="2"></rect><path d="M6 7V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2"></path></svg>
+            </div>
+            <h3 class="service-title">Офисная мебель</h3>
+            <p class="service-desc">Комплексное оснащение офисных пространств: столы, тумбы, переговорные зоны и&nbsp;кабинеты руководителей.</p>
+            <div class="service-features">
+              <div class="service-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Офисные станции для персонала
+              </div>
+              <div class="service-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Стойки ресепшн и&nbsp;зоны приёма гостей
+              </div>
+              <div class="service-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Шкафы и&nbsp;архивные системы хранения
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-secondary open-modal-btn" style="width: 100%;">Запросить офисную мебель</button>
+        </div>
+
+        <!-- Service 3: Cabinet furniture -->
+        <div class="service-card reveal">
+          <div>
+            <div class="service-illustration">
+              <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M3 12h18M12 3v18"></path></svg>
+            </div>
+            <h3 class="service-title">Корпусная мебель</h3>
+            <p class="service-desc">Шкафы-купе, встроенные гардеробные, прихожие, стенки и&nbsp;системы хранения для жилых помещений.</p>
+            <div class="service-features">
+              <div class="service-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Встроенные и&nbsp;отдельно стоящие шкафы
+              </div>
+              <div class="service-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Эргономичное внутреннее наполнение
+              </div>
+              <div class="service-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Прочные раздвижные и&nbsp;распашные системы
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-secondary open-modal-btn" style="width: 100%;">Расчет шкафа или гардероба</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ADVANTAGES / QUALITY STANDARDS -->
+  <section class="section-advantages" id="advantages">
+    <div class="container">
+      <div class="reveal">
+        <h2 class="section-title">Принципы нашей работы</h2>
+        <p class="section-subtitle">Обеспечиваем точность на&nbsp;каждом этапе выполнения заказа</p>
+      </div>
+
+      <div class="advantages-grid">
+        <div class="advantage-item reveal">
+          <div class="advantage-num">01</div>
+          <h3 class="advantage-title">Выездной замер</h3>
+          <p class="advantage-desc">Замерщик выезжает на&nbsp;объект в&nbsp;Екатеринбурге, снимает точные габариты и&nbsp;фиксирует особенности стен и&nbsp;розеток.</p>
+        </div>
+
+        <div class="advantage-item reveal">
+          <div class="advantage-num">02</div>
+          <h3 class="advantage-title">Согласование проекта</h3>
+          <p class="advantage-desc">Готовим подробный чертеж изделия, утверждаем расположение полок, фурнитуру и&nbsp;цвета фасадов.</p>
+        </div>
+
+        <div class="advantage-item reveal">
+          <div class="advantage-num">03</div>
+          <h3 class="advantage-title">Контроль материалов</h3>
+          <p class="advantage-desc">Используем ЛДСП, МДФ и&nbsp;кромку, соответствующую стандартам безопасности и&nbsp;экологичности.</p>
+        </div>
+
+        <div class="advantage-item reveal">
+          <div class="advantage-num">04</div>
+          <h3 class="advantage-title">Сборка на&nbsp;объекте</h3>
+          <p class="advantage-desc">Осуществляем аккуратную доставку и&nbsp;подгонку элементов непосредственно в&nbsp;вашем помещении.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE ESTIMATOR -->
+  <section class="section-estimator" id="estimator">
+    <div class="container">
+      <div class="estimator-box reveal">
+        <div style="text-align: center; margin-bottom: 24px;">
+          <h2 class="section-title">Быстрый расчёт проекта</h2>
+          <p class="section-subtitle" style="margin: 0 auto;">Выберите параметры мебели и&nbsp;отправьте спецификацию в&nbsp;мессенджер</p>
+        </div>
+
+        <div class="estimator-grid">
+          <div>
+            <div class="step-title">1. Какой тип мебели вам необходим?</div>
+            <div class="options-grid" id="type-options">
+              <div class="option-card selected" data-value="Кухонный гарнитур" onclick="selectOption('type', this)">
+                <div class="option-label">Кухня</div>
+              </div>
+              <div class="option-card" data-value="Офисная мебель" onclick="selectOption('type', this)">
+                <div class="option-label">Офис</div>
+              </div>
+              <div class="option-card" data-value="Корпусный шкаф / Гардеробная" onclick="selectOption('type', this)">
+                <div class="option-label">Шкаф</div>
+              </div>
+              <div class="option-card" data-value="Индивидуальный спецпроект" onclick="selectOption('type', this)">
+                <div class="option-label">Спецпроект</div>
+              </div>
+            </div>
+
+            <div class="step-title">2. Назначение помещения</div>
+            <div class="options-grid" id="place-options">
+              <div class="option-card selected" data-value="Квартира / Дом" onclick="selectOption('place', this)">
+                <div class="option-label">Квартира</div>
+              </div>
+              <div class="option-card" data-value="Офис компании" onclick="selectOption('place', this)">
+                <div class="option-label">Офис</div>
+              </div>
+              <div class="option-card" data-value="Торговое или общественное помещение" onclick="selectOption('place', this)">
+                <div class="option-label">Коммерция</div>
+              </div>
+            </div>
+
+            <div class="step-title">3. Примерные габариты или пожелания</div>
+            <textarea class="input-notes" id="estimator-notes" placeholder="Укажите ориентировочные размеры (например, 3 метра) или требования к материалам..."></textarea>
+
+            <button class="btn btn-primary" style="width: 100%; font-size: 0.98rem; padding: 14px;" onclick="sendEstimateToWhatsApp()">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+              </svg>
+              Отправить в&nbsp;WhatsApp
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT COMPANY SECTION -->
+  <section class="section-about" id="about">
+    <div class="container about-content">
+      <div class="reveal">
+        <h2 class="section-title" style="text-align: center;">О&nbsp;компании УралПромГрупп</h2>
+        <p class="section-subtitle" style="text-align: center; margin: 0 auto 28px;">Специализация и&nbsp;подход к&nbsp;производству</p>
+      </div>
+
+      <div class="about-card reveal">
+        <p class="about-text">
+          Компания «УралПромГрупп» занимается проектированием и&nbsp;изготовлением корпусной, офисной мебели и&nbsp;кухонных гарнитуров на&nbsp;заказ в&nbsp;г.&nbsp;Екатеринбурге.
+        </p>
+        <p class="about-text">
+          Мы работаем с&nbsp;частными лицами и&nbsp;коммерческими организациями, создавая предметы мебели по&nbsp;индивидуальным размерам, чертежам и&nbsp;спецификациям. Каждое изделие проходит этап предварительного замера и&nbsp;детального согласования перед передачей в&nbsp;раскрой и&nbsp;сборку.
+        </p>
+
+        <div class="about-tags">
+          <span class="about-tag">г.&nbsp;Екатеринбург</span>
+          <span class="about-tag">Кухонные гарнитуры</span>
+          <span class="about-tag">Офисные станции</span>
+          <span class="about-tag">Корпусные шкафы</span>
+          <span class="about-tag">Работа с&nbsp;юр. и&nbsp;физ. лицами</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="section-faq" id="faq">
+    <div class="container">
+      <div class="reveal" style="text-align: center;">
+        <h2 class="section-title">Вопросы и&nbsp;ответы</h2>
+        <p class="section-subtitle" style="margin: 0 auto 32px;">Ответы на&nbsp;популярные вопросы перед оформлением заказа</p>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item reveal">
+          <div class="faq-header" onclick="toggleFaq(this)">
+            <span>Как происходит выезд замерщика в&nbsp;Екатеринбурге?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </div>
+          <div class="faq-body">
+            Замерщик согласовывает с&nbsp;вами удобное время выезда на&nbsp;объект в&nbsp;Екатеринбурге. На&nbsp;месте проводятся точные измерения помещения, учитываются коммуникации, розетки и&nbsp;особенности стен.
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <div class="faq-header" onclick="toggleFaq(this)">
+            <span>Работаете ли вы с&nbsp;юридическими лицами?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </div>
+          <div class="faq-body">
+            Да, мы изготавливаем офисную и&nbsp;корпусную мебель для организаций. Оформляются все необходимые договорные и&nbsp;закрывающие документы.
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <div class="faq-header" onclick="toggleFaq(this)">
+            <span>Можно ли сделать мебель по&nbsp;нашему готовому дизайн-проекту?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </div>
+          <div class="faq-body">
+            Да. Мы принимаем готовые эскизы и&nbsp;дизайн-проекты. Наши специалисты адаптируют проект под технологические стандарты производства и&nbsp;соберут спецификацию материалов.
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <div class="faq-header" onclick="toggleFaq(this)">
+            <span>Какая мебель изготавливается для офисов?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </div>
+          <div class="faq-body">
+            Мы производим столы сотрудников, модульные станции, столы для переговоров, стойки ресепшн, тумбы, а&nbsp;также шкафы для хранения документов и&nbsp;одежды.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTS SECTION -->
+  <section class="section-contacts" id="contacts">
+    <div class="container">
+      <div class="contacts-grid">
+        <div class="reveal">
+          <div class="badge">
+            <span class="badge-dot"></span>
+            Прямой контакт
+          </div>
+          <h2 class="section-title">Свяжитесь с&nbsp;нами</h2>
+          <p class="section-subtitle">Обсудите ваш проект мебели с&nbsp;мастером или запросите консультацию</p>
+          
+          <div style="margin-top: 20px;">
+            <a href="tel:+79122760292" class="btn btn-primary" style="padding: 14px 24px; font-size: 0.98rem; width: 100%;">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              Позвонить: +7 (912) 276-02-92
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-card-box reveal">
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            </div>
+            <div>
+              <div class="contact-label">Телефон в&nbsp;Екатеринбурге</div>
+              <a href="tel:+79122760292" class="contact-value">+7 (912) 276-02-92</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </div>
+            <div>
+              <div class="contact-label">Локация</div>
+              <div class="contact-value" style="font-size: 1rem;">г.&nbsp;Екатеринбург</div>
+            </div>
+          </div>
+
+          <div class="contact-item" style="margin-bottom: 0;">
+            <div class="contact-item-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            </div>
+            <div style="width: 100%;">
+              <div class="contact-label">Быстрый мессенджер</div>
+              <div class="messengers-flex">
+                <a href="https://wa.me/79122760292" target="_blank" rel="noopener" class="msg-btn msg-btn-wa">
+                  WhatsApp
+                </a>
+                <a href="https://t.me/+79122760292" target="_blank" rel="noopener" class="msg-btn msg-btn-tg">
+                  Telegram
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-flex">
+      <div>
+        © УралПромГрупп. Мебель на&nbsp;заказ в&nbsp;Екатеринбурге.
+      </div>
+      <div>
+        Корпусная мебель | Офисная мебель | Кухни
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE FIXED CONTACT BAR -->
+  <div class="mobile-contact-bar">
+    <a href="tel:+79122760292" class="mobile-bar-btn btn-secondary">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+      Позвонить
+    </a>
+    <a href="https://wa.me/79122760292" target="_blank" rel="noopener" class="mobile-bar-btn btn-primary">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+      WhatsApp
+    </a>
+  </div>
+
+  <!-- MODAL POPUP -->
+  <div class="modal-overlay" id="contact-modal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal()">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <h3 class="modal-title">Связаться с&nbsp;УралПромГрупп</h3>
+      <p class="modal-desc">Выберите удобный способ связи для консультации и&nbsp;расчета проекта в&nbsp;Екатеринбурге:</p>
+
+      <div class="modal-actions">
+        <a href="tel:+79122760292" class="btn btn-secondary" style="justify-content: flex-start; width: 100%;">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          Позвонить: +7 (912) 276-02-92
+        </a>
+        <a href="https://wa.me/79122760292" target="_blank" rel="noopener" class="btn btn-primary" style="justify-content: flex-start; width: 100%; background: #25D366; color: #fff;">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+          Написать в&nbsp;WhatsApp
+        </a>
+        <a href="https://t.me/+79122760292" target="_blank" rel="noopener" class="btn btn-secondary" style="justify-content: flex-start; width: 100%; border-color: rgba(0,136,204,0.4); color: #0088CC;">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm5.56 8.16l-1.97 9.28c-.15.65-.54.81-1.08.5l-3.02-2.23-1.46 1.4c-.16.16-.3.3-.61.3l.22-3.07 5.58-5.04c.24-.22-.05-.34-.37-.13l-6.9 4.34-2.97-.93c-.65-.2-.66-.65.14-.96l11.62-4.48c.54-.2 1.01.12.84.86z"/></svg>
+          Написать в&nbsp;Telegram
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ONLINE CONSULTATION CHAT WIDGET -->
+  <button class="chat-widget-trigger" id="chat-trigger" aria-label="Чат онлайн-консультации" title="Онлайн-консультант УралПромГрупп">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+    <span class="chat-badge-dot"></span>
+  </button>
+
+  <div class="chat-window" id="chat-window">
+    <div class="chat-header">
+      <div class="chat-consultant-info">
+        <div class="chat-avatar">УП</div>
+        <div>
+          <div class="chat-name">Консультант УралПромГрупп</div>
+          <div class="chat-status">Онлайн • г.&nbsp;Екатеринбург</div>
+        </div>
+      </div>
+      <button class="chat-close-btn" id="chat-close">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+
+    <div class="chat-body" id="chat-messages">
+      <div class="chat-msg chat-msg-bot">
+        Здравствуйте! 👋 Рады видеть вас на&nbsp;сайте «УралПромГрупп». Помогу с&nbsp;расчётом кухни, офисной или корпусной мебели в&nbsp;Екатеринбурге. Что вас интересует?
+      </div>
+      <div class="chat-quick-actions">
+        <button class="chat-quick-btn" onclick="sendChatQuick('Расчет кухни')">Расчет кухни</button>
+        <button class="chat-quick-btn" onclick="sendChatQuick('Офисная мебель')">Офисная мебель</button>
+        <button class="chat-quick-btn" onclick="sendChatQuick('Вызов замерщика')">Вызов замерщика</button>
+        <button class="chat-quick-btn" onclick="sendChatQuick('WhatsApp')">Написать в WhatsApp</button>
+      </div>
+    </div>
+
+    <div class="chat-footer">
+      <input type="text" class="chat-input" id="chat-input-text" placeholder="Введите ваш вопрос..." onkeypress="handleChatKeyPress(event)">
+      <button class="chat-send-btn" onclick="sendChatMessage()">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    // Theme Switcher Logic
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+
+    themeToggleBtn.addEventListener('click', () => {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    });
+
+    // Mobile Hamburger Menu Control
+    const burgerBtn = document.getElementById('burger-btn');
+    const mobileDrawer = document.getElementById('mobile-drawer');
+    const drawerClose = document.getElementById('drawer-close');
+
+    if (burgerBtn && mobileDrawer) {
+      burgerBtn.addEventListener('click', () => {
+        mobileDrawer.classList.add('active');
+      });
+    }
+
+    if (drawerClose && mobileDrawer) {
+      drawerClose.addEventListener('click', () => {
+        mobileDrawer.classList.remove('active');
+      });
+    }
+
+    function closeMobileDrawer() {
+      if (mobileDrawer) {
+        mobileDrawer.classList.remove('active');
+      }
+    }
+
+    // Intersection Observer for smooth reveal animations
+    document.addEventListener('DOMContentLoaded', () => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+          }
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    });
+
+    // Tab switcher in Hero schematic
+    function switchTab(type, event) {
+      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+      if (event && event.target) {
+        event.target.classList.add('active');
+      }
+
+      document.getElementById('schematic-kitchen').style.display = type === 'kitchen' ? 'block' : 'none';
+      document.getElementById('schematic-office').style.display = type === 'office' ? 'block' : 'none';
+      document.getElementById('schematic-cabinet').style.display = type === 'cabinet' ? 'block' : 'none';
+    }
+
+    // Interactive Estimator Option Selector
+    const estimatorData = {
+      type: 'Кухонный гарнитур',
+      place: 'Квартира / Дом'
+    };
+
+    function selectOption(category, element) {
+      const container = element.parentElement;
+      container.querySelectorAll('.option-card').forEach(card => card.classList.remove('selected'));
+      element.classList.add('selected');
+      estimatorData[category] = element.getAttribute('data-value');
+    }
+
+    function sendEstimateToWhatsApp() {
+      const notes = document.getElementById('estimator-notes').value.trim();
+      let text = `Здравствуйте, УралПромГрупп! Составляю заявку на расчёт проекта в Екатеринбурге:\n\n` +
+                 `• Тип мебели: ${estimatorData.type}\n` +
+                 `• Назначение: ${estimatorData.place}\n`;
+      
+      if (notes) {
+        text += `• Размеры / Пожелания: ${notes}\n`;
+      }
+      
+      text += `\nПрошу проконсультировать по изготовлению.`;
+
+      const encodedText = encodeURIComponent(text);
+      window.open(`https://wa.me/79122760292?text=${encodedText}`, '_blank');
+    }
+
+    // FAQ Accordion
+    function toggleFaq(header) {
+      const item = header.parentElement;
+      const isActive = item.classList.contains('active');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+      if (!isActive) {
+        item.classList.add('active');
+      }
+    }
+
+    // Contact Modal Control
+    const modal = document.getElementById('contact-modal');
+    document.querySelectorAll('.open-modal-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        modal.classList.add('active');
+        closeMobileDrawer();
+      });
+    });
+
+    function closeModal() {
+      modal.classList.remove('active');
+    }
+
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+
+    // Chat Widget Control
+    const chatTrigger = document.getElementById('chat-trigger');
+    const chatWindow = document.getElementById('chat-window');
+    const chatClose = document.getElementById('chat-close');
+    const chatMessages = document.getElementById('chat-messages');
+    const chatInput = document.getElementById('chat-input-text');
+
+    chatTrigger.addEventListener('click', () => {
+      chatWindow.classList.toggle('active');
+    });
+
+    chatClose.addEventListener('click', () => {
+      chatWindow.classList.remove('active');
+    });
+
+    function handleChatKeyPress(e) {
+      if (e.key === 'Enter') {
+        sendChatMessage();
+      }
+    }
+
+    function sendChatMessage() {
+      const text = chatInput.value.trim();
+      if (!text) return;
+
+      // Add user message
+      const userMsg = document.createElement('div');
+      userMsg.className = 'chat-msg chat-msg-user';
+      userMsg.textContent = text;
+      chatMessages.appendChild(userMsg);
+
+      chatInput.value = '';
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+
+      // Automated response
+      setTimeout(() => {
+        const botMsg = document.createElement('div');
+        botMsg.className = 'chat-msg chat-msg-bot';
+        botMsg.innerHTML = `Отлично! Для оперативного ответа перенаправляю ваше сообщение в WhatsApp или вы можете позвонить по телефону <strong>+7 (912) 276-02-92</strong>.<br><br><a href="https://wa.me/79122760292?text=${encodeURIComponent(text)}" target="_blank" style="color:var(--accent); font-weight:600; text-decoration:underline;">Отправить сообщение в WhatsApp →</a>`;
+        chatMessages.appendChild(botMsg);
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+      }, 600);
+    }
+
+    function sendChatQuick(type) {
+      let promptText = '';
+      if (type === 'Расчет кухни') promptText = 'Здравствуйте! Интересует расчёт стоимости кухни на заказ.';
+      else if (type === 'Офисная мебель') promptText = 'Здравствуйте! Нужен расчёт офисной мебели для компании.';
+      else if (type === 'Вызов замерщика') promptText = 'Здравствуйте! Хочу пригласить замерщика в Екатеринбурге.';
+      else if (type === 'WhatsApp') {
+        window.open('https://wa.me/79122760292', '_blank');
+        return;
+      }
+
+      chatInput.value = promptText;
+      sendChatMessage();
+    }
+  </script>
+</body>
+</html>
